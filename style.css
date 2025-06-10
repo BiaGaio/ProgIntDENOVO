@@ -1,0 +1,98 @@
+/* Fundo geral */
+body {
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4ec);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título com coração */
+h1 {
+  color: #d63384;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+h1::after {
+  content: " 💗";
+}
+
+/* Moldura da calculadora */
+.container {
+  max-width: 400px;
+  background: #fff;
+  border: 5px dashed #f8c4e1;
+  border-radius: 25px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+}
+
+/* Tela */
+#tela {
+  height: 60px;
+  font-size: 28px;
+  text-align: right;
+  background-color: #fff0f5;
+  border: 2px solid #f8c4e1;
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px #f5b6d4;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+/* Botão padrão */
+button {
+  width: 70px;
+  height: 70px;
+  font-size: 1.4rem;
+  margin: 6px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(255, 182, 193, 0.3);
+  transition: transform 0.1s ease;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+/* Números - rosa claro */
+.btn-secondary {
+  background-color: #ffb6c1;
+  border-color: #ffb6c1;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #ff9eb0;
+  border-color: #ff9eb0;
+}
+
+/* Operações - rosa escuro */
+.btn-info {
+  background-color: #f06292;
+  border-color: #f06292;
+  color: white;
+}
+.btn-info:hover {
+  background-color: #ec407a;
+  border-color: #ec407a;
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  #tela {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+}
