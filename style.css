@@ -53,6 +53,18 @@ button {
 button:active {
   transform: scale(0.95);
 }
+.calc-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: stretch;
+  margin-bottom: 15px;
+}
+
+.calc-container button {
+  height: 60px;
+  font-size: 1.2rem;
+}
 
 /* Números - rosa claro */
 .btn-secondary {
